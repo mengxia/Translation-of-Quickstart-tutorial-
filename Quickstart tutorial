@@ -1,15 +1,15 @@
 Prerequisites
-
+学些此教程的预备条件
 Before reading this tutorial you should know a bit of Python. If you would like to refresh your memory, take a look at the Python tutorial.
-
+在学习此文档之前，你需要对Python有一些了解，不妨阅读一些Python教程以助于复习掌握Python的知识。
 If you wish to work the examples in this tutorial, you must also have some software installed on your computer. Please see http://scipy.org/install.html for instructions.
-
+如果你需要运行本教程中的例子，则你的电脑中必须安装有一些程序，访问http://scipy.org/install.html获得更为详细的帮助。
 The Basics
-
+基础
 NumPy’s main object is the homogeneous multidimensional array. It is a table of elements (usually numbers), all of the same type, indexed by a tuple of positive integers. In NumPy dimensions are called axes. The number of axes is rank.
-
+Numpy的主要对象为元素性质相同的多维数组，该数组实际上是一个由相同元素组成的表（元素一般为数值），数组通过正整数元组进行索引。在Numpy中，维度被称为“轴”，“轴”的数量被称为“秩”。
 For example, the coordinates of a point in 3D space [1, 2, 1] is an array of rank 1, because it has one axis. That axis has a length of 3. In the example pictured below, the array has rank 2 (it is 2-dimensional). The first dimension (axis) has a length of 2, the second dimension has a length of 3.
-
+例如，一个三维空间点的坐标为[1,2,1]，这是一个秩为1的数组，因为它有一个轴，轴的长度是3。下面的例子中，数组拥有两个秩（rank），第一个维度（axis）长度为2，第二个维度（axis）长度为3。
 [[ 1., 0., 0.],
  [ 0., 1., 2.]]
 NumPy’s array class is called ndarray. It is also known by the alias array. Note that numpy.array is not the same as the Standard Python Library class array.array, which only handles one-dimensional arrays and offers less functionality. The more important attributes of an ndarray object are:
